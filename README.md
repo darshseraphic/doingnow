@@ -29,7 +29,7 @@ options while still preserving the app’s minimal and focused identity.
 
 Early access and updates for DoingNow can be found at:
 
-https://doignow.lovable.app/
+https://doingnow.lovable.app/
 
 The project is being built using Flutter and Dart with a strong focus on performance, maintainability, 
 cross-platform consistency, and platform-native behavior. DoingNow is not trying to become the most 
