@@ -1,8 +1,8 @@
-# DoingNow
+# doingnow
 
-DoingNow is a minimal habit and routine companion designed for people who want more consistency, structure, and clarity in their everyday lives without relying on bloated productivity systems.
+Doingnow is a minimal habit and routine companion designed for people who want more consistency, structure, and clarity in their everyday lives without relying on bloated productivity systems.
 
-The app is built around a simple idea: meaningful progress comes from small actions repeated consistently over time. Instead of overwhelming users with complex dashboards, aggressive gamification, or endless configuration screens, DoingNow focuses on creating a calm and distraction-free experience that quietly supports daily routines.
+The app is built around a simple idea: meaningful progress comes from small actions repeated consistently over time. Instead of overwhelming users with complex dashboards, aggressive gamification, or endless configuration screens, doingnow focuses on creating a calm and distraction-free experience that quietly supports daily routines.
 
 ## Features
 
@@ -16,7 +16,7 @@ The app is built around a simple idea: meaningful progress comes from small acti
 
 ## Philosophy
 
-DoingNow is intentionally designed to feel lightweight, fast, and minimal. Every interaction is built to reduce friction and cognitive load while maintaining a modern and clean visual experience.
+doingnow is intentionally designed to feel lightweight, fast, and minimal. Every interaction is built to reduce friction and cognitive load while maintaining a modern and clean visual experience.
 
 The goal is not to maximize screen time or create dependency. DoingNow is designed to integrate naturally into everyday life and help users stay consistent without unnecessary complexity.
 
@@ -33,7 +33,7 @@ The objective is to create a system users can trust long term without constant m
 
 ## Development
 
-DoingNow is currently under active development with ongoing improvements focused on:
+doingnow is currently under active development with ongoing improvements focused on:
 
 - notification reliability
 - scheduling stability
