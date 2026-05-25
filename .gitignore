@@ -1,13 +1,13 @@
-# -----------------------------
+# -----------------------------------
 # Operating System Files
-# -----------------------------
+# -----------------------------------
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# -----------------------------
+# -----------------------------------
 # Logs & Temporary Files
-# -----------------------------
+# -----------------------------------
 *.log
 *.tmp
 *.temp
@@ -19,26 +19,20 @@ desktop.ini
 tmp/
 temp/
 
-# -----------------------------
-# Python / Misc
-# -----------------------------
-*.pyc
-
-# -----------------------------
+# -----------------------------------
 # IDE / Editor
-# -----------------------------
+# -----------------------------------
 .idea/
 *.iml
 *.ipr
 *.iws
 
 .vscode/
-
 .atom/
 
-# -----------------------------
+# -----------------------------------
 # Flutter / Dart
-# -----------------------------
+# -----------------------------------
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
@@ -53,24 +47,25 @@ coverage/
 **/doc/api/
 **/ios/Flutter/.last_build_id
 
-# -----------------------------
+# -----------------------------------
 # Android
-# -----------------------------
+# -----------------------------------
 android/.gradle/
+android/local.properties
+android/gradle/local.properties
+
 android/app/debug/
 android/app/profile/
 android/app/release/
-
-android/local.properties
 
 # Android signing files
 key.properties
 *.jks
 *.keystore
 
-# -----------------------------
+# -----------------------------------
 # iOS
-# -----------------------------
+# -----------------------------------
 ios/Pods/
 ios/.symlinks/
 ios/Flutter/ephemeral/
@@ -83,52 +78,52 @@ ios/Flutter/Generated.xcconfig
 *.xcuserdata
 *.xcuserstate
 
-# -----------------------------
+# -----------------------------------
 # macOS
-# -----------------------------
+# -----------------------------------
 macos/Pods/
 macos/Flutter/ephemeral/
 
-# -----------------------------
+# -----------------------------------
 # Linux
-# -----------------------------
+# -----------------------------------
 linux/flutter/ephemeral/
 
-# -----------------------------
+# -----------------------------------
 # Windows
-# -----------------------------
+# -----------------------------------
 windows/flutter/ephemeral/
 
-# -----------------------------
+# -----------------------------------
 # Web
-# -----------------------------
+# -----------------------------------
 web/flutter_service_worker.js
 web/.dart_tool/
 
-# -----------------------------
+# -----------------------------------
 # Environment Variables / Secrets
-# -----------------------------
+# -----------------------------------
 .env
 .env.*
 *.env
 
-# -----------------------------
+# -----------------------------------
 # Firebase / Google Services
 # Uncomment if you DON'T want
 # Firebase config files public
-# -----------------------------
+# -----------------------------------
 # android/app/google-services.json
 # ios/Runner/GoogleService-Info.plist
 
-# -----------------------------
+# -----------------------------------
 # Obfuscation / Symbolication
-# -----------------------------
+# -----------------------------------
 app.*.symbols
 app.*.map.json
 
-# -----------------------------
+# -----------------------------------
 # Build Systems
-# -----------------------------
+# -----------------------------------
 .build/
 .buildlog/
 .history/
@@ -136,28 +131,27 @@ app.*.map.json
 .swiftpm/
 migrate_working_dir/
 
-# -----------------------------
+# -----------------------------------
 # Generated Crash / Debug Files
-# -----------------------------
+# -----------------------------------
 crashlytics-build.properties
 
-# -----------------------------
-# Miscellaneous
-# -----------------------------
-*.class
-
-# Unwanted local/generated folders
+# -----------------------------------
+# Gradle / Kotlin / Cache Junk
+# -----------------------------------
+.gradle/
 caches/
 daemon/
 kotlin-profile/
 native/
 
-# Downloaded Gradle zips
+# Downloaded Gradle ZIPs
 *.zip
 
-# Local flags/files
+# Local flags
 *.flag
 
-.gradle/
-wrapper/
-.gradle-cache/
+# -----------------------------------
+# Miscellaneous
+# -----------------------------------
+*.class

@@ -1,16 +1,3 @@
-// homescreen.dart
-// NO external packages required — persistence uses dart:io (local JSON file).
-// Data is saved to: ~/.doingnow/habits_v1.json  (Windows: %USERPROFILE%\.doingnow\)
-//
-// Fonts: Inter_18pt-Bold/Light/Medium/Regular/SemiBold in ./file/ folder
-// pubspec fonts block:
-//   - family: Inter_18pt
-//     fonts:
-//       - asset: file/Inter_18pt-Regular.ttf
-//       - asset: file/Inter_18pt-Medium.ttf   weight: 500
-//       - asset: file/Inter_18pt-SemiBold.ttf weight: 600
-//       - asset: file/Inter_18pt-Bold.ttf     weight: 700
-
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
@@ -20,9 +7,6 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'dart:ui' show lerpDouble;
 import 'package:url_launcher/url_launcher.dart';
-// ═══════════════════════════════════════════════════════════
-//  ICON CATALOGUE  (no emojis – only Material IconData)
-// ═══════════════════════════════════════════════════════════
 
 class _IconOption {
   final IconData icon;
@@ -667,8 +651,8 @@ class AppStrings {
     'deleteProgressTitle': 'You want to Delete you progress?',
     'cancel': 'Cancel',
     'noArchivedHabits': 'No archived habits yet.',
-    'privacyText': "Your data stays on your device and isn't shared. Feel free to write about your thoughts, daily life, and experiences - darshvici",
-    'versionClean': 'version - Clean',
+    'privacyText': "Your data stays on your device and isn't shared. Feel free to write about your thoughts, daily life, and experiences - darshseraphic",
+    'versionClean': 'version - v0.1.0 - Beta',
     'shareSummary': 'Progress summary',
     'themeDescription': 'Choose how the app looks.',
     'languageDescription': 'Pick the app language.',
@@ -734,7 +718,7 @@ class AppStrings {
       'delete': 'Eliminar',
       'cancel': 'Cancelar',
       'noArchivedHabits': 'Todavia no hay habitos archivados.',
-      'privacyText': 'Tus datos permanecen en tu dispositivo y no se comparten. Puedes escribir sobre tus pensamientos, tu vida diaria y tus experiencias - darshvici',
+      'privacyText': 'Tus datos permanecen en tu dispositivo y no se comparten. Puedes escribir sobre tus pensamientos, tu vida diaria y tus experiencias - darshseraphic',
       'shareSummary': 'Resumen del progreso',
       'themeDescription': 'Elige el aspecto de la app.',
       'languageDescription': 'Elige el idioma de la app.',
@@ -798,7 +782,7 @@ class AppStrings {
       'deleteProgressTitle': 'Willst du deinen Fortschritt loschen?',
       'cancel': 'Abbrechen',
       'noArchivedHabits': 'Noch keine archivierten Gewohnheiten.',
-      'privacyText': 'Deine Daten bleiben auf deinem Geraet und werden nicht geteilt. Du kannst frei ueber deine Gedanken, dein taegliches Leben und deine Erfahrungen schreiben - darshvici',
+      'privacyText': 'Deine Daten bleiben auf deinem Geraet und werden nicht geteilt. Du kannst frei ueber deine Gedanken, dein taegliches Leben und deine Erfahrungen schreiben - darshseraphic',
       'shareSummary': 'Fortschrittsubersicht',
       'themeDescription': 'Wahle das Aussehen der App.',
       'languageDescription': 'Wahle die App-Sprache.',
@@ -862,7 +846,7 @@ class AppStrings {
       'deleteProgressTitle': 'Voulez-vous supprimer votre progression ?',
       'cancel': 'Annuler',
       'noArchivedHabits': 'Aucune habitude archivee.',
-      'privacyText': 'Tes donnees restent sur ton appareil et ne sont pas partagees. Tu peux ecrire librement sur tes pensees, ta vie quotidienne et tes experiences - darshvici',
+      'privacyText': 'Tes donnees restent sur ton appareil et ne sont pas partagees. Tu peux ecrire librement sur tes pensees, ta vie quotidienne et tes experiences - darshseraphic',
       'shareSummary': 'Resume de progression',
       'themeDescription': 'Choisissez l apparence de l application.',
       'languageDescription': 'Choisissez la langue de l application.',
@@ -926,7 +910,7 @@ class AppStrings {
       'deleteProgressTitle': 'Vuoi eliminare i tuoi progressi?',
       'cancel': 'Annulla',
       'noArchivedHabits': 'Nessuna abitudine archiviata.',
-      'privacyText': 'I tuoi dati restano sul tuo dispositivo e non vengono condivisi. Sentiti libero di scrivere pensieri, vita quotidiana ed esperienze - darshvici',
+      'privacyText': 'I tuoi dati restano sul tuo dispositivo e non vengono condivisi. Sentiti libero di scrivere pensieri, vita quotidiana ed esperienze - darshseraphic',
       'shareSummary': 'Riepilogo progressi',
       'themeDescription': 'Scegli l aspetto dell app.',
       'languageDescription': 'Scegli la lingua dell app.',
@@ -990,7 +974,7 @@ class AppStrings {
       'deleteProgressTitle': 'Voce quer excluir seu progresso?',
       'cancel': 'Cancelar',
       'noArchivedHabits': 'Ainda nao ha habitos arquivados.',
-      'privacyText': 'Seus dados ficam no seu dispositivo e nao sao compartilhados. Escreva livremente sobre pensamentos, vida diaria e experiencias - darshvici',
+      'privacyText': 'Seus dados ficam no seu dispositivo e nao sao compartilhados. Escreva livremente sobre pensamentos, vida diaria e experiencias - darshseraphic',
       'shareSummary': 'Resumo do progresso',
       'themeDescription': 'Escolha a aparencia do app.',
       'languageDescription': 'Escolha o idioma do app.',
@@ -1730,7 +1714,7 @@ class AppStrings {
       _monthLabels[code] ?? _monthLabels['en']!;
 
   static List<String> weekdays(String code) =>
-      _weekdayLabels[code] ?? _weekdayLabels['en']!;
+      _weekdayLabels[code] ?? _weekdayLabels['en']!;q
 }
 
 class AppTheme {
@@ -1779,7 +1763,7 @@ class AppTheme {
   // Upcoming (future) day color
   static Color get upcomingDot => switch (mode) {
     AppThemeModePreference.light => const Color(0xFFCACACA),
-    AppThemeModePreference.dark => const Color(0xFFCACACA),
+    AppThemeModePreference.dark => const Color(0xFF222222),
   };
   // Inactive (not scheduled) day
   static Color get inactiveDot => switch (mode) {
@@ -2523,8 +2507,6 @@ class _SplashTransitionState extends State<_SplashTransition> with TickerProvide
 
     await WidgetsBinding.instance.endOfFrame;
     if (!mounted) return;
-
-    await Future.delayed(const Duration(milliseconds: 1200));
     if (!mounted) return;
 
     setState(() {
@@ -2931,7 +2913,7 @@ class _MonthCard extends StatelessWidget {
               children: [
                 Row(children: _weekdayLabels(context).map((d) => Expanded(
                   child: Text(d, textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 9, color: AppTheme.textSecondary, // Bumped slightly for legibility
+                      style: TextStyle(fontSize: 9, color: AppTheme.textSecondary,
                           fontWeight: FontWeight.w500)),
                 )).toList()),
                 const SizedBox(height: 4),
@@ -2942,7 +2924,7 @@ class _MonthCard extends StatelessWidget {
                     crossAxisCount: 7,
                     mainAxisSpacing: 2,
                     crossAxisSpacing: 2,
-                    childAspectRatio: 1.6, // Adjusted from 1.8 to make cells slightly taller and more balanced
+                    childAspectRatio: 2.2,
                   ),
                   itemCount: totalCells,
                   itemBuilder: (_, i) {
@@ -3782,7 +3764,7 @@ class _NotificationsSettingsPage extends StatelessWidget {
                     Text('Background activity',
                         style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13)),
                     const SizedBox(height: 2),
-                    Text('Tap to open battery settings. Set doingnow to Unrestricted so reminders fire when the app is closed.',
+                    Text('Set doingnow to Unrestricted so reminders fire when the app is closed.',
                         style: TextStyle(fontSize: 11, color: AppTheme.textSecondary, height: 1.4)),
                   ])),
                   Icon(Icons.chevron_right, size: 16, color: AppTheme.textTertiary),
@@ -4261,11 +4243,18 @@ class _CircleDayDot extends StatelessWidget {
         break;
 
       case _CT.undone:
-      // Past incomplete — transparent fill, exact hex border per theme
+      // Past incomplete — transparent fill with theme-specific border
         bg = Colors.transparent;
+
+        final isDark =
+            Theme.of(context).brightness == Brightness.dark;
+
         borderColor = isToday
             ? AppTheme.textPrimary
-            : const Color(0xFF666666);
+            : (isDark
+            ? const Color(0xFF222222) // Dark theme
+            : const Color(0xFFCACACA)); // Light theme
+
         break;
 
       case _CT.empty:
