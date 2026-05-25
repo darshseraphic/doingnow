@@ -1714,7 +1714,7 @@ class AppStrings {
       _monthLabels[code] ?? _monthLabels['en']!;
 
   static List<String> weekdays(String code) =>
-      _weekdayLabels[code] ?? _weekdayLabels['en']!;q
+      _weekdayLabels[code] ?? _weekdayLabels['en']!;
 }
 
 class AppTheme {
@@ -2924,7 +2924,7 @@ class _MonthCard extends StatelessWidget {
                     crossAxisCount: 7,
                     mainAxisSpacing: 2,
                     crossAxisSpacing: 2,
-                    childAspectRatio: 2.2,
+                    childAspectRatio: 2.0,
                   ),
                   itemCount: totalCells,
                   itemBuilder: (_, i) {
