@@ -62,9 +62,9 @@ Built using Flutter and Dart with a strong focus on:
 - platform-native behavior
 
 <p align="center">
-  <a href="https://github.com/darshseraphic/doingnow/releases/tag/v0.1.0-beta">
+  <a href="https://github.com/darshseraphic/doingnow/releases/tag/v0.1.0">
     <img 
-      src="https://img.shields.io/badge/Download-Beta_Release-000000?style=for-the-badge&logo=github&logoColor=white" 
+      src="https://img.shields.io/badge/Download-Official_release-000000?style=for-the-badge&logo=github&logoColor=white" 
       alt="Download Beta Release"
     />
   </a>
@@ -74,5 +74,5 @@ Built using Flutter and Dart with a strong focus on:
 Developed by <b>darshseraphic</b>
 </p>
 <p align="center">
-<b>doingnow</b> version 0.1.0 --beta (under devlopment)
+<b>doingnow</b> version 0.1.0
 </p>
